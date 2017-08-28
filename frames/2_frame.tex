@@ -1,0 +1,30 @@
+\begin{frame}
+	\frametitle{Prueba $a, b \in P, a \prec b$ si y solo si $F(a) \prec^{\prime} F(b)$}
+
+	\begin{block}{Proof}
+		\PN \begin{tabular}{|c|} \hline $\Rightarrow$ \\\hline \end{tabular} Supongamos $a \prec b$, veamos que $F(a)
+		\prec^{\prime} F(b)$. Debemos ver:
+	  \begin{enumerate}[1)]
+	    \item $f(a) <^{\prime} f(b)$
+	    \item $\nexists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$
+	  \end{enumerate}
+
+		\vspace{2mm}
+	  \PN Tenemos que:
+		\begin{center}
+			\begin{tabular}{|c|}
+				\hline $a \prec b \Leftrightarrow \nexists z$ tal que $a < z < b$ y $a < b$ \\\hline
+			\end{tabular} $(\star)$
+		\end{center}
+
+		\begin{enumerate}
+	  	\item Dado que la función f es un \textbf{isomorfismo}, este primer punto se cumple.
+			\item Supongamos que $\exists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$. Luego, nuevamente utilizando que f
+			es \textbf{isomorfismo}, tenemos:
+			\begin{eqnarray*}
+	  		f^{-1}(f(a)) &<& f^{-1}(z^{\prime}) < f^{-1}(f(b)) \\
+				a &<& f^{-1}(z^{\prime}) < b
+			\end{eqnarray*}
+		\end{enumerate}
+	\end{block}
+\end{frame}
