@@ -3,28 +3,11 @@
 
 	\begin{block}{Proof}
 		\PN \begin{tabular}{|c|} \hline $\Leftarrow$ \\\hline \end{tabular} Supongamos $F(a) \prec^{\prime} F(b)$, veamos
-		que $a \prec b$. Debemos ver:
-			\begin{enumerate}
-				\item $a < b$
-				\item $\nexists z$ tal que $a < z < b$
-			\end{enumerate}
+		que $a \prec b$. Ya que $F^{-1}: (P, \leq) \rightarrow (P^{\prime}, \leq^{\prime})$, por lo ya visto tenemos:
 
-		\vspace{2mm}
-	  \PN Tenemos que:
-		\begin{center}
-			\begin{tabular}{|c|}
-				\hline $f(a) \prec^{\prime} f(b) \Leftrightarrow f(a) < f(b)$ y $\nexists z^{\prime}$ tal que $f(a) <
-				z^{\prime} < f(b)$ \\\hline
-			\end{tabular} $(\star)$
-		\end{center}
-
-		\begin{enumerate}
-	  	\item Dado que la función f es un \textbf{isomorfismo}, este primer punto se cumple.
-			\item Supongamos que $\exists z$ tal que $a < z < b$. Luego, nuevamente utilizando que f es \textbf{isomorfismo},
-			tenemos:
-			\begin{eqnarray*}
-				f(a) <^{\prime} f(z) <^{\prime} f(b)
-			\end{eqnarray*}
-		\end{enumerate}
+		\begin{eqnarray*}
+			f^{-1}(f(a)) &\prec& f^{-1}(f(b)) \\
+			a &\prec& b
+		\end{eqnarray*}
 	\end{block}
 \end{frame}

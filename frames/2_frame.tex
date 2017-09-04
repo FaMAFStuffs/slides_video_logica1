@@ -10,17 +10,17 @@
 	  \end{enumerate}
 
 		\vspace{2mm}
-	  \PN Tenemos que:
+	  \PN Ya que $a \prec b$, tenemos por definición que:
 		\begin{center}
 			\begin{tabular}{|c|}
-				\hline $a \prec b \Leftrightarrow \nexists z$ tal que $a < z < b$ y $a < b$ \\\hline
+				\hline $a \prec b \Leftrightarrow a < b$ y  $\nexists z$ tal que $a < z < b$ \\\hline
 			\end{tabular} $(\star)$
 		\end{center}
 
 		\begin{enumerate}
-	  	\item Dado que la función f es un \textbf{isomorfismo}, este primer punto se cumple.
-			\item Supongamos que $\exists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$. Luego, nuevamente utilizando que f
-			es \textbf{isomorfismo}, tenemos:
+	  	\item Por la observación $(\dag)$, este primer punto se cumple.
+			\item Supongamos que $\exists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$. Luego, nuevamente utilizando
+			$(\dag)$, tenemos:
 			\begin{eqnarray*}
 	  		f^{-1}(f(a)) &<& f^{-1}(z^{\prime}) < f^{-1}(f(b)) \\
 				a &<& f^{-1}(z^{\prime}) < b
