@@ -2,26 +2,26 @@
 	\frametitle{Prueba $a, b \in P, a \prec b$ si y solo si $f(a) \prec^{\prime} f(b)$}
 
 	\begin{block}{Proof}
-		\PN Recordemos que por definición, $x \prec y$ en un poset $(P, \leq) \Leftrightarrow x < y$ y  $\nexists z$ tal que
-		$x < z < y$.
+		\PN \onslide<1->{Recordemos que por definición, $x \prec y$ en un poset $(P, \leq) \Leftrightarrow x < y$ y
+		$\nexists z$ tal que $x < z < y$.}
 
 		\vspace{3mm}
-		\PN \begin{tabular}{|c|} \hline $\Rightarrow$ \\\hline \end{tabular} Supongamos $a \prec b$, veamos que $f(a)
-		\prec^{\prime} f(b)$. Debemos probar entonces:
+		\PN \onslide<2->{\begin{tabular}{|c|} \hline $\Rightarrow$ \\\hline \end{tabular} Supongamos $a \prec b$, veamos que
+		$f(a) \prec^{\prime} f(b)$. Debemos probar entonces:}
 	  \begin{enumerate}[1)]
-	    \item $f(a) <^{\prime} f(b)$
-	    \item $\nexists z^{\prime}$ tal que $f(a) <^{\prime} z^{\prime} <^{\prime} f(b)$
+	    \item<3-> $f(a) <^{\prime} f(b)$
+	    \item<4-> $\nexists z^{\prime}$ tal que $f(a) <^{\prime} z^{\prime} <^{\prime} f(b)$
 	  \end{enumerate}
 
 		\vspace{2mm}
-	  \PN Ya que $a \prec b$, tenemos:
+	  \PN \onslide<5->{Ya que $a \prec b$, tenemos:}
 		\begin{enumerate}[i)]
-			\item $a < b$
-			\item $\nexists z$ tal que $x < z < y$
+			\item<6-> $a < b$
+			\item<7-> $\nexists z$ tal que $x < z < y$
 		\end{enumerate}
 
 		\begin{enumerate}[1)]
-	  	\item Por la observación $(\dag)$ y (i), este primer punto se cumple.
+	  	\item<8-> Por la observación $(\dag)$ y (i), este primer punto se cumple.
 		\end{enumerate}
 	\end{block}
 \end{frame}
