@@ -1,18 +1,30 @@
 \begin{frame}
-	\frametitle{Prueba $a, b \in P, a \prec b$ si y solo si $F(a) \prec^{\prime} F(b)$}
+	\frametitle{Prueba $a, b \in P, a \prec b$ si y solo si $f(a) \prec^{\prime} f(b)$}
 
 	\begin{block}{}
-		\PN Lo cual, contradice $(\star)$. El absurdo vino de suponer que $\exists z^{\prime}$ tal que $f(a) < z^{\prime} <
-		f(b)$, por lo tanto $\nexists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$.
+		\begin{enumerate}[2)]
+			\item Supongamos que $\exists z^{\prime}$ tal que $f(a) <^{\prime} z^{\prime} <^{\prime} f(b)$. Luego, nuevamente
+			utilizando $(\dag)$, tenemos:
+		\end{enumerate}
+		\begin{eqnarray*}
+			f^{-1}(f(a)) &<& f^{-1}(z^{\prime}) < f^{-1}(f(b)) \\
+			a &<& f^{-1}(z^{\prime}) < b
+		\end{eqnarray*}
+
+		\PN Lo cual, contradice (ii). El absurdo vino de suponer que $\exists z^{\prime}$ tal que
+		$f(a) <^{\prime} z^{\prime} <^{\prime} f(b)$, por lo tanto $\nexists z^{\prime}$ tal que
+		$f(a) <^{\prime} z^{\prime} <^{\prime} f(b)$.
+
+		\PN Finalmente, dado que se cumplen los puntos 1) y 2), se cumple también $f(a) \prec^{\prime} f(b)$.
 
 		\vspace{5mm}
-		\PN Finalmente, dado que se cumplen los puntos (1) y (2), es decir, hemos probado:
-		\begin{enumerate}
-	    \item $f(a) <^{\prime} f(b)$
-	    \item $\nexists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$
-	  \end{enumerate}
+		\PN \begin{tabular}{|c|} \hline $\Leftarrow$ \\\hline \end{tabular} Supongamos $f(a) \prec^{\prime} f(b)$, veamos
+		que $a \prec b$.
 
-		\vspace{5mm}
-		\PN se cumple también $f(a) \prec^{\prime} f(b)$.
+		\PN Ya que $f^{-1}: (P^{\prime}, \leq^{\prime}) \rightarrow (P, \leq)$ es isomorfismo, por lo ya visto tenemos:
+		\begin{eqnarray*}
+			f^{-1}(f(a)) &\prec& f^{-1}(f(b)) \\
+			a &\prec& b
+		\end{eqnarray*}
 	\end{block}
 \end{frame}

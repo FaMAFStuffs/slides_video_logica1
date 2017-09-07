@@ -1,30 +1,27 @@
 \begin{frame}
-	\frametitle{Prueba $a, b \in P, a \prec b$ si y solo si $F(a) \prec^{\prime} F(b)$}
+	\frametitle{Prueba $a, b \in P, a \prec b$ si y solo si $f(a) \prec^{\prime} f(b)$}
 
 	\begin{block}{Proof}
-		\PN \begin{tabular}{|c|} \hline $\Rightarrow$ \\\hline \end{tabular} Supongamos $a \prec b$, veamos que $F(a)
-		\prec^{\prime} F(b)$. Debemos ver:
+		\PN Recordemos que por definición, $x \prec y$ en un poset $(P, \leq) \Leftrightarrow x < y$ y  $\nexists z$ tal que
+		$x < z < y$.
+
+		\vspace{3mm}
+		\PN \begin{tabular}{|c|} \hline $\Rightarrow$ \\\hline \end{tabular} Supongamos $a \prec b$, veamos que $f(a)
+		\prec^{\prime} f(b)$. Debemos probar entonces:
 	  \begin{enumerate}[1)]
 	    \item $f(a) <^{\prime} f(b)$
-	    \item $\nexists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$
+	    \item $\nexists z^{\prime}$ tal que $f(a) <^{\prime} z^{\prime} <^{\prime} f(b)$
 	  \end{enumerate}
 
 		\vspace{2mm}
-	  \PN Ya que $a \prec b$, tenemos por definición que:
-		\begin{center}
-			\begin{tabular}{|c|}
-				\hline $a \prec b \Leftrightarrow a < b$ y  $\nexists z$ tal que $a < z < b$ \\\hline
-			\end{tabular} $(\star)$
-		\end{center}
+	  \PN Ya que $a \prec b$, tenemos:
+		\begin{enumerate}[i)]
+			\item $a < b$
+			\item $\nexists z$ tal que $x < z < y$
+		\end{enumerate}
 
-		\begin{enumerate}
-	  	\item Por la observación $(\dag)$, este primer punto se cumple.
-			\item Supongamos que $\exists z^{\prime}$ tal que $f(a) < z^{\prime} < f(b)$. Luego, nuevamente utilizando
-			$(\dag)$, tenemos:
-			\begin{eqnarray*}
-	  		f^{-1}(f(a)) &<& f^{-1}(z^{\prime}) < f^{-1}(f(b)) \\
-				a &<& f^{-1}(z^{\prime}) < b
-			\end{eqnarray*}
+		\begin{enumerate}[1)]
+	  	\item Por la observación $(\dag)$ y (i), este primer punto se cumple.
 		\end{enumerate}
 	\end{block}
 \end{frame}
